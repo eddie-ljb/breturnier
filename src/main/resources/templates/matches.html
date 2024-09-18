@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Team HTML</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans:700,400%7CRaleway:400,800,900" rel="stylesheet" />
+    <link rel="icon" th:href="@{/favicon.ico}" type="image/x-icon">
+    <link th:href="@{/bootstrap.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/preloader-default.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/demo-switcher.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/soccer.min.css}" rel="stylesheet" type="text/css" />
+    <!-- 
+    
+    Enable one styles which the you want
+    
+    <link href="css-min/soccer.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/hockey.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/basketball.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/football.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/baseball.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/dota.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/csgo.min.css" rel="stylesheet" type="text/css" />
+    
+    All libraries included in this css, concating rules in /grunt/cssmin.js
+    Use grunt default task for creating this files
+    
+    -->
+</head>
+
+<body>
+
+	<div class="preloader-wrapper" id="preloader">
+    <div class="motion-line dark-big"></div>
+    <div class="motion-line yellow-big"></div>
+    <div class="motion-line dark-small"></div>
+    <div class="motion-line yellow-normal"></div>
+    <div class="motion-line yellow-small1"></div>
+    <div class="motion-line yellow-small2"></div>
+</div>
+
+
+    <!--MAIN MENU WRAP BEGIN-->
+<div class="main-menu-wrap sticky-menu">
+    <div class="container">
+        <a href="index-2.html" class="custom-logo-link"><img th:src="@{/breKlein.png}" alt="logo" class="custom-logo"></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#team-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <nav class="navbar">
+            <div class="collapse navbar-collapse" id="team-menu">
+                <ul class="main-menu nav">
+                        <li class="active">
+                            <a th:href="@{/breturnier/}">home</a>
+                        </li>
+                        <li>
+                        	<a th:href="@{/breturnier/matches}">Matches</a>
+                       	 	<ul>
+                           	 	<li>
+                           	     	<a th:href="@{/#}">Standings<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                           	     	<ul>
+                           	         	<li><a th:href="@{/standings}">Bre Turnier</a></li>
+                           	     	</ul>
+                           	 	</li>
+                           	 	<li>
+                           	     	<a th:href="@{/#}">Einzelturniere<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                           	     	<ul>
+                           	         	<li><a th:href="@{/smash}">Smash</a></li>
+                           	         	<li><a th:href="@{/darts}">Darts</a></li>
+                           	         	<li><a th:href="@{/mariokart}">Mariokart 8 Deluxe</a></li>
+                           	         	<li><a th:href="@{/eafc}">EA FC 24</a></li>
+                           	         	<li><a th:href="@{/minecraft}">Minecraft Bedwars</a></li>
+                           	         	<li><a th:href="@{/rocket}">Rocket League</a></li>
+                           	         	<li><a th:href="@{/rainbow}">Rainbow Six: Siege</a></li>
+                           	         	<li><a th:href="@{/skullking}">Skull King</a></li>
+                           	     	</ul>
+                           	 	</li>
+                           	 	<li><a th:href="@{/match-live}">Match Live</a></li>
+                           	 	<li><a th:href="@{/broadcasts}">Livestreams</a></li>
+                         	   	<li><a th:href="@{/upcoming-match}">nächstes Match</a></li>
+                           		<li><a th:href="@{/live-text-stream}">Text stream</a></li>
+                        	</ul>
+                    	</li>
+                        <li>
+                            <a th:href="@{/breturnier/#team}">team</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/news}">news</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/breturnier/#about}">about</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/breturnier/#contact}">contact</a>
+                        </li>
+                    </ul>
+            </div>       
+        </nav>
+    </div>
+</div>
+<!--MAIN MENU WRAP END-->
+
+
+    <!--MAIN MENU WRAP END-->
+
+    <!--BREADCRUMBS BEGIN-->
+<section class="image-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="info">
+                    <div class="wrap">
+                        <ul class="breadcrumbs">
+                            <li><a href="index-2.html">BRE TURNIER</a>/</li>
+                            <li>WETTBEWERBE</li>
+                        </ul>
+                        <h1>ERGEBNISSE</h1>
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </div>
+</section>
+<!--BREADCRUMBS END-->
+
+
+    <!--MAIN MATCH SHEDULE BEGIN-->
+
+    <section class="main-match-shedule amateurs-match-shedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12"><h5>Next matches</h5></div>
+                <div class="col-md-10 col-sm-9 col-xs-9">
+
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    
+<ul class="tab-filters" role="tablist">
+    <li class="active"><a href="#smash" role="tab" data-toggle="tab" aria-expanded="true">Smash Bros</a></li>
+    <li><a href="#darts" role="tab" data-toggle="tab" aria-expanded="true">Darts</a></li>
+    <li><a href="#mariokart" role="tab" data-toggle="tab" aria-expanded="true">Mariokart 8 Deluxe</a></li>
+    <li><a href="#eafc" role="tab" data-toggle="tab" aria-expanded="true">EA FC 24</a></li>
+    <li><a href="#mc" role="tab" data-toggle="tab" aria-expanded="true">Minecraft Bedwars</a></li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="smash">
+        <div class="amateurs-main-match">
+            <div class="title">Smash Bros - 3. Spieltag</div>	
+            <a href="matches.html" class="team">
+                <span class="image"><img th:src="@{/pixelpioniere.png}" alt="main-match"></span>
+                <span class="info">
+                    <span class="name">Pixelpioniere by GPT-4</span>
+                    <span class="city">Lew & Timo</span>
+                </span>
+            </a>
+            <div class="score">
+                <span>1:1</span>	
+            </div>
+            <a href="matches.html" class="team guest">
+                <span class="info">
+                    <span class="name">Reichsbürger</span>
+                    <span class="city">Eddie & Peter</span>
+                </span>	
+                <span class="image"><img th:src="@{/reichsbuerger.png}" alt="main-match"></span>
+            </a>
+            <div class="title">31.08.2024 - Nintendo Switch</div>
+        </div>
+        <div class="amateurs-main-match">
+            <div class="title">Smash Bros - 3. Spieltag</div>	
+            <a href="matches.html" class="team">
+                <span class="image"><img th:src="@{/maddawg.png}" alt="main-match"></span>
+                <span class="info">
+                    <span class="name">Mad Dawg</span>
+                    <span class="city">Alex</span>
+                </span>
+            </a>
+            <div class="score">
+                <span>1:1</span>	
+            </div>
+            <a href="matches.html" class="team guest">
+                <span class="info">
+                    <span class="name">Pumpkin Spicy Latte</span>
+                    <span class="city">Schlax & Mark</span>
+                </span>	
+                <span class="image"><img th:src="@{/pumpkinspicy.png}" alt="main-match"></span>
+            </a>
+            <div class="title">31.08.2024 - Nintendo Switch</div>
+        </div>
+    </div>
+    <div class="tab-pane" id="darts">
+        <div class="amateurs-main-match">
+            <div class="title">Darts - 3. Spieltag</div>	
+            <a href="matches.html" class="team">
+                <span class="image"><img th:src="@{/pumpkinspicy.png}" alt="main-match"></span>
+                <span class="info">
+                    <span class="name">Pumpkin Spicy Latte</span>
+                    <span class="city">Schlax & Mark</span>
+                </span>
+            </a>
+            <div class="score">
+                <span>2:0</span>	
+            </div>
+            <a href="matches.html" class="team guest">
+                <span class="info">
+                    <span class="name">Reichsbürger</span>
+                    <span class="city">Eddie & Peter</span>
+                </span>	
+                <span class="image"><img th:src="@{/reichsbuerger.png}" alt="main-match"></span>
+            </a>
+            <div class="title">31.08.2024 - Dartscheibe</div>
+        </div>
+        <div class="amateurs-main-match">
+            <div class="title">Darts - 3. Spieltag</div>	
+            <a href="matches.html" class="team">
+                <span class="image"><img th:src="@{/maddawg.png}" alt="main-match"></span>
+                <span class="info">
+                    <span class="name">Mad Dawg</span>
+                    <span class="city">Alex & Henry</span>
+                </span>
+            </a>
+            <div class="score">
+                <span>2:0</span>	
+            </div>
+            <a href="matches.html" class="team guest">
+                <span class="info">
+                    <span class="name">Pixelpioniere by GPT-4</span>
+                    <span class="city">Lew & Timo</span>
+                </span>	
+                <span class="image"><img th:src="@{/reichsbuerger.png}" alt="main-match"></span>
+            </a>
+            <div class="title">31.08.2024 - Dartscheibe</div>
+        </div>
+    </div>
+     <div class="tab-pane" id="mariokart">
+        <div class="amateurs-main-match">
+            <div class="title">Mariokart 8 Deluxe - 3. Spieltag</div>	
+            <a href="matches.html" class="team">
+                <span class="image"><img th:src="@{/pumpkinspicy.png}" alt="main-match"></span>
+                <span class="info">
+                    <span class="name">Pumpkin Spicy Latte</span>
+                    <span class="city">Schlax & Mark</span>
+                </span>
+            </a>
+            <div class="score">
+                <span>0:1</span>	
+            </div>
+            <a href="matches.html" class="team guest">
+                <span class="info">
+                    <span class="name">Reichsbürger</span>
+                    <span class="city">Eddie & Peter</span>
+                </span>	
+                <span class="image"><img th:src="@{/reichsbuerger.png}" alt="main-match"></span>
+            </a>
+            <div class="title">31.08.2024 - Nintendo Switch</div>
+        </div>
+        <div class="amateurs-main-match">
+            <div class="title">Mariokart 8 Deluxe - 3. Spieltag</div>	
+            <a href="matches.html" class="team">
+                <span class="image"><img th:src="@{/maddawg.png}" alt="main-match"></span>
+                <span class="info">
+                    <span class="name">Mad Dawg</span>
+                    <span class="city">Alex & Henry</span>
+                </span>
+            </a>
+            <div class="score">
+                <span>0:1</span>	
+            </div>
+            <a href="matches.html" class="team guest">
+                <span class="info">
+                    <span class="name">Pixelpioniere by GPT-4</span>
+                    <span class="city">Lew & Timo</span>
+                </span>	
+                <span class="image"><img th:src="@{/pixelpioniere.png}" alt="main-match"></span>
+            </a>
+            <div class="title">31.08.2024 - Nintendo Switch</div>
+        </div>
+    </div>
+    <div class="tab-pane" id="eafc">
+        <div class="amateurs-main-match">
+            <div class="title">EA FC 24 - 3. Spieltag</div>	
+            <a href="matches.html" class="team">
+                <span class="image"><img th:src="@{/reichsbuerger.png}" alt="main-match"></span>
+                <span class="info">
+                    <span class="name">Reichsbürger</span>
+                    <span class="city">Eddie & Peter</span>
+                </span>
+            </a>
+            <div class="score">
+                <span>3:1</span>	
+            </div>
+            <a href="matches.html" class="team guest">
+                <span class="info">
+                    <span class="name">Pumpkin Spicy Latte</span>
+                    <span class="city">Schlax & Mark</span>
+                </span>	
+                <span class="image"><img th:src="@{/pumpkinspicy.png}" alt="main-match"></span>
+            </a>
+            <div class="title">31.08.2024 - Eddies PC</div>
+        </div>
+        <div class="amateurs-main-match">
+            <div class="title">EA FC 24 - 3. Spieltag</div>	
+            <a href="matches.html" class="team">
+                <span class="image"><img th:src="@{/maddawg.png}" alt="main-match"></span>
+                <span class="info">
+                    <span class="name">Mad Dawg</span>
+                    <span class="city">Alex</span>
+                </span>
+            </a>
+            <div class="score">
+                <span>1:0</span>	
+            </div>
+            <a href="matches.html" class="team guest">
+                <span class="info">
+                    <span class="name">Pixelpioniere by GPT-4</span>
+                    <span class="city">Lew & Timo</span>
+                </span>	
+                <span class="image"><img th:src="@{/pixelpioniere.png}" alt="main-match"></span>
+            </a>
+            <div class="title">31.08.2024 - Eddies PC</div>
+            <div class="title">Aufgegeben durch Pixelpioniere by GPT-4</div>
+        </div>
+    </div>
+    <div class="tab-pane" id="mc">
+        <div class="amateurs-main-match">
+            <div class="title">Minecraft Bedwars - 1. Spieltag</div>	
+            <a href="matches.html" class="team">
+                <span class="image"><img th:src="@{/pixelpioniere.png}" alt="main-match"></span>
+                <span class="info">
+                    <span class="name">Pixelpioniere</span>
+                    <span class="city">Lew & Timo</span>
+                </span>
+            </a>
+            <div class="score">
+                <span>0:2</span>	
+            </div>
+            <a href="matches.html" class="team guest">
+                <span class="info">
+                    <span class="name">Reichsbürger</span>
+                    <span class="city">Eddie & Peter</span>
+                </span>	
+                <span class="image"><img th:src="@{/reichsbuerger.png}" alt="main-match"></span>
+            </a>
+            <div class="title">31.08.2024 - Eddies & Alex' PC</div>
+        </div>
+        <div class="amateurs-main-match">
+            <div class="title">Minecraft Bedwars - 1. Spieltag</div>	
+            <a href="matches.html" class="team">
+                <span class="image"><img th:src="@{/pumpkinspicy.png}" alt="main-match"></span>
+                <span class="info">
+                    <span class="name">Pumpkin Spicy Latte</span>
+                    <span class="city">Schlax & Mark</span>
+                </span>
+            </a>
+            <div class="score">
+                <span>0:1</span>	
+            </div>
+            <a href="matches.html" class="team guest">
+                <span class="info">
+                    <span class="name">Pixelpioniere by GPT-4</span>
+                    <span class="city">Lew & Timo</span>
+                </span>	
+                <span class="image"><img th:src="@{/pixelpioniere.png}" alt="main-match"></span>
+            </a>
+            <div class="title">31.08.2024 - Eddies & Alex' PC</div>
+            <div class="title">Match läuft noch</div>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12"><h6>letzte matches</h6></div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+<!-- ----------------------------------------------------------------------------------------- -->        
+<div class="main-lates-matches">
+    <a href="#" class="item">
+        <span class="championship">National cup - quarterfinal</span>
+        <span class="teams-wrap">
+                <span class="team">
+                    <span>
+                        <img th:src="@{/team-logo1.png}" alt="team-image">
+                    </span>
+                    <span>Team 1</span>
+                </span>
+                <span class="score">
+                    <span>3:2</span>
+
+                </span>
+                <span class="team1">
+                    <span>Internacional</span>
+                    <span><img th:src="@{/team-logo2.png}" alt="team-image"></span>
+                </span>
+        </span>
+        <span class="game-result">(5-4) penalties</span>
+    </a>
+    <a href="#" class="item">
+        <span class="championship">National cup - quarterfinal</span>
+        <span class="teams-wrap">
+                <span class="team">
+                    <span>
+                        <img th:src="@{/team-logo3.png}" alt="team-image">
+                    </span>
+                    <span>Team 1</span>
+                </span>
+                <span class="score">
+                    <span>3:2</span>
+
+                </span>
+                <span class="team1">
+                    <span>Team 2</span>
+                    <span><img th:src="@{/team-logo4.png}" alt="team-image"></span>
+                </span>
+        </span>
+        <span class="game-result">(5-4) penalties</span>
+    </a>
+    <a href="#" class="item">
+        <span class="championship">National cup - quarterfinal</span>
+        <span class="teams-wrap">
+                <span class="team">
+                    <span>
+                        <img th:src="@{/team-logo5.png}" alt="team-image">
+                    </span>
+                    <span>Team 1</span>
+                </span>
+                <span class="score">
+                    <span>3:2</span>
+
+                </span>
+                <span class="team1">
+                    <span>Team 2</span>
+                    <span><img th:src="@{/team-logo1.png}" alt="team-image"></span>
+                </span>
+        </span>
+        <span class="game-result">(5-4) penalties</span>
+    </a>
+    <a href="#" class="item">
+        <span class="championship">National cup - quarterfinal</span>
+        <span class="teams-wrap">
+                <span class="team">
+                    <span>
+                        <img th:src="@{/team-logo2.png}" alt="team-image">
+                    </span>
+                    <span>Team 1</span>
+                </span>
+                <span class="score">
+                    <span>3:2</span>
+
+                </span>
+                <span class="team1">
+                    <span>Team 2</span>
+                    <span><img th:src="@{/team-logo3.png}" alt="team-image"></span>
+                </span>
+        </span>
+        <span class="game-result">(5-4) penalties</span>
+    </a>
+    <a href="#" class="item">
+        <span class="championship">National cup - quarterfinal</span>
+        <span class="teams-wrap">
+                <span class="team">
+                    <span>
+                        <img th:src="@{/team-logo4.png}" alt="team-image">
+                    </span>
+                    <span>Team 1</span>
+                </span>
+                <span class="score">
+                    <span>3:2</span>
+
+                </span>
+                <span class="team1">
+                    <span>Team 2</span>
+                    <span><img th:src="@{/team-logo5.png}" alt="team-image"></span>
+                </span>
+        </span>
+        <span class="game-result">(5-4) penalties</span>
+    </a>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--MAIN MATCH SHEDULE END-->
+
+    <!--FOOTER BEGIN-->
+<footer class="footer">
+    <div class="wrapper-overfllow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-left">
+                        <div class="wrap">
+                            <a href="index-2.html" class="foot-logo"><img th:src="@{/footer-logo.png}" alt="footer-logo"></a>
+                            <p>Activated charcoal trust fund ugh prism af, beard marfa air plant stumptown gastropub farm-to-table jianbing.</p>
+                            <ul class="foot-left-menu">
+                                <li><a href="staff.html">First team</a></li>
+                                <li><a href="staff.html">Second team</a></li>
+                                <li><a href="amateurs.html">Amateurs</a></li>
+                                <li><a href="donations.html">Donation</a></li>
+                                <li><a href="trophies.html">trophies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-offset-1">
+                    <div class="foot-news">
+                        <h4>Recent news</h4>
+                        <div class="item">
+                            <a href="news.html" class="image"><img class="img-responsive" th:src="@{/foot-news-img.jpg}" alt="news-image"></a>
+                            <a href="news.html" class="name">When somersaulting Sanchez shouldered Mexico’s hopes</a>
+                            <a href="news.html" class="date">25 Sep 2016</a>
+                            <span class="separator">in</span>
+                            <a href="news.html" class="category">Highlights</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3 col-md-4 col-sm-12">
+                    <div class="foot-contact">
+                        <h4>Contact us</h4>
+                        <ul class="contact-list">
+                            <li><i class="fa fa-flag" aria-hidden="true"></i><span>276 Upper Parliament Street, Liverpool L8, Great Britain</span></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:team@email.com">team@email.com</a></li>
+                            <li class="phone"><i class="fa fa-phone" aria-hidden="true"></i><span>+61 3 8376 6284</span></li>
+                        </ul>
+                        <ul class="socials">
+                            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-menu-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="footer-menu">
+                        <li class="active"><a href="index-2.html"><span>Home</span></a></li>
+                        <li><a href="matches.html"><span>Matches</span></a></li>
+                        <li><a href="staff.html"><span>Team</span></a></li>
+                        <li><a href="news.html"><span>News</span></a></li>
+                        <li><a href="store.html"><span>Store</span></a></li>
+                        <li><a href="contacts.html"><span>Contact</span></a></li>
+                    </ul>	
+                    <a href="#top" class="foot-up"><span>up <i class="fa fa-caret-up" aria-hidden="true"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="copyrights">
+                        <a target="_blank" href="https://www.templateshub.net">Templates Hub</a>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="created">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--FOOTER END-->
+
+    <script type="text/javascript" th:src="@{/library/jquery.js}"></script>
+<script type="text/javascript" th:src="@{/library/jquery-ui.js}"></script>
+<script type="text/javascript" th:src="@{/library/bootstrap.js}"></script>
+<script type="text/javascript" th:src="@{/library/jquery.sticky.js}"></script>
+<script type="text/javascript" th:src="@{/library/jquery.jcarousel.js}"></script>
+<script type="text/javascript" th:src="@{/library/jcarousel.connected-carousels.js}"></script>
+<script type="text/javascript" th:src="@{/library/owl.carousel.js}"></script>
+<script type="text/javascript" th:src="@{/library/progressbar.js}"></script>
+<script type="text/javascript" th:src="@{/library/jquery.bracket.min.js}"></script>
+<script type="text/javascript" th:src="@{/library/chartist.js}"></script>
+<script type="text/javascript" th:src="@{/library/Chart.js}"></script>
+<script type="text/javascript" th:src="@{/library/fancySelect.js}"></script>
+<script type="text/javascript" th:src="@{/library/isotope.pkgd.js}"></script>
+<script type="text/javascript" th:src="@{/library/imagesloaded.pkgd.js}"></script>
+
+<script type="text/javascript" th:src="@{/jquery.team-coundown.js}"></script>
+<script type="text/javascript" th:src="@{/matches-slider.js}"></script>
+<script type="text/javascript" th:src="@{/header.js}"></script>
+<script type="text/javascript" th:src="@{/matches_broadcast_listing.js}"></script>
+<script type="text/javascript" th:src="@{/news-line.js}"></script>
+<script type="text/javascript" th:src="@{/match_galery.js}"></script>
+<script type="text/javascript" th:src="@{/main-club-gallery.js}"></script>
+<script type="text/javascript" th:src="@{/product-slider.js}"></script>
+<script type="text/javascript" th:src="@{/circle-bar.js}"></script>
+<script type="text/javascript" th:src="@{/standings.js}"></script>
+<script type="text/javascript" th:src="@{/shop-price-filter.js}"></script>
+<script type="text/javascript" th:src="@{/timeseries.js}"></script>
+<script type="text/javascript" th:src="@{/radar.js}"></script>
+<script type="text/javascript" th:src="@{/slider.js}"></script>
+<script type="text/javascript" th:src="@{/preloader.js}"></script>
+<script type="text/javascript" th:src="@{/diagram.js}"></script>
+<script type="text/javascript" th:src="@{/bi-polar-diagram.js}"></script>
+<script type="text/javascript" th:src="@{/label-placement-diagram.js}"></script>
+<script type="text/javascript" th:src="@{/donut-chart.js}"></script>
+<script type="text/javascript" th:src="@{/animate-donut.js}"></script>
+<script type="text/javascript" th:src="@{/advanced-smil.js}"></script>
+<script type="text/javascript" th:src="@{/svg-path.js}"></script>
+<script type="text/javascript" th:src="@{/pick-circle.js}"></script>
+<script type="text/javascript" th:src="@{/horizontal-bar.js}"></script>
+<script type="text/javascript" th:src="@{/gauge-chart.js}"></script>
+<script type="text/javascript" th:src="@{/stacked-bar.js}"></script>
+
+<script type="text/javascript" th:src="@{/library/chartist-plugin-legend.js}"></script>
+<script type="text/javascript" th:src="@{/library/chartist-plugin-threshold.js}"></script>
+<script type="text/javascript" th:src="@{/library/chartist-plugin-pointlabels.js}"></script>
+
+<script type="text/javascript" th:src="@{/treshold.js}"></script>
+<script type="text/javascript" th:src="@{/visible.js}"></script>
+<script type="text/javascript" th:src="@{/anchor.js}"></script>
+<script type="text/javascript" th:src="@{/landing_carousel.js}"></script>
+<script type="text/javascript" th:src="@{/landing_sport_standings.js}"></script>
+<script type="text/javascript" th:src="@{/twitterslider.js}"></script>
+<script type="text/javascript" th:src="@{/champions.js}"></script>
+<script type="text/javascript" th:src="@{/landing_mainnews_slider.js}"></script>
+<script type="text/javascript" th:src="@{/carousel.js}"></script>
+<script type="text/javascript" th:src="@{/video_slider.js}"></script>
+<script type="text/javascript" th:src="@{/footer_slides.js}"></script>
+<script type="text/javascript" th:src="@{/player_test.js}"></script>
+
+<script type="text/javascript" th:src="@{/main.js}"></script>
+
+</body>
+
+
+</html>

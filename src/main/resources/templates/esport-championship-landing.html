@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Team HTML</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans:700,400%7CRaleway:400,800,900" rel="stylesheet" />
+    <link rel="icon" th:href="@{/favicon.ico}" type="image/x-icon">
+    <link th:href="@{/bootstrap.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/soccer.min.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/preloader-default.css}" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="esport-black">
+    
+    <div class="preloader-wrapper" id="preloader">
+    <div class="motion-line dark-big"></div>
+    <div class="motion-line yellow-big"></div>
+    <div class="motion-line dark-small"></div>
+    <div class="motion-line yellow-normal"></div>
+    <div class="motion-line yellow-small1"></div>
+    <div class="motion-line yellow-small2"></div>
+</div>
+    
+    <!--MAIN MENU WRAP BEGIN-->
+<div class="main-menu-wrap sticky-menu">
+    <div class="container">
+        <a href="index-2.html" class="custom-logo-link"><img th:src="@{/breKlein.png}" alt="logo" class="custom-logo"></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#team-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <nav class="navbar">
+            <div class="collapse navbar-collapse" id="team-menu">
+                <ul class="main-menu nav">
+                        <li class="active">
+                            <a th:href="@{/breturnier/}">home</a>
+                        </li>
+                        <li>
+                        	<a th:href="@{/breturnier/matches}">Matches</a>
+                       	 	<ul>
+                           	 	<li>
+                           	     	<a th:href="@{/#}">Standings<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                           	     	<ul>
+                           	         	<li><a th:href="@{/standings}">Bre Turnier</a></li>
+                           	     	</ul>
+                           	 	</li>
+                           	 	<li>
+                           	     	<a th:href="@{/#}">Einzelturniere<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                           	     	<ul>
+                           	         	<li><a th:href="@{/smash}">Smash</a></li>
+                           	         	<li><a th:href="@{/darts}">Darts</a></li>
+                           	         	<li><a th:href="@{/mariokart}">Mariokart 8 Deluxe</a></li>
+                           	         	<li><a th:href="@{/eafc}">EA FC 24</a></li>
+                           	         	<li><a th:href="@{/minecraft}">Minecraft Bedwars</a></li>
+                           	         	<li><a th:href="@{/rocket}">Rocket League</a></li>
+                           	         	<li><a th:href="@{/rainbow}">Rainbow Six: Siege</a></li>
+                           	         	<li><a th:href="@{/skullking}">Skull King</a></li>
+                           	     	</ul>
+                           	 	</li>
+                           	 	<li><a th:href="@{/match-live}">Match Live</a></li>
+                           	 	<li><a th:href="@{/broadcasts}">Livestreams</a></li>
+                         	   	<li><a th:href="@{/upcoming-match}">nächstes Match</a></li>
+                           		<li><a th:href="@{/live-text-stream}">Text stream</a></li>
+                        	</ul>
+                    	</li>
+                        <li>
+                            <a th:href="@{/breturnier/#team}">team</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/news}">news</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/breturnier/#about}">about</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/breturnier/#contact}">contact</a>
+                        </li>
+                    </ul>
+            </div>       
+        </nav>
+    </div>
+</div>
+<!--MAIN MENU WRAP END-->
+    
+    <div class="esport_champoinship_main_slider">
+    <div class="main-slide-post">
+        <div id="horizontal-wrapper">
+            <div class="wrapper">
+                <img th:src="@{/siegerbildMariokart.jpg}" alt='slider-image'>
+                <div>
+                    <span>31.08.2024</span>
+                    <span class="text">Rasant und Eindeutig: Team Pixelpioniere by GPT-4 gewinnt Mariokart 8 Deluxe mit voller Punkteausbeute!</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img th:src="@{/siegerbildSmash.jpg}" alt='slider-image'>
+                <div>
+                    <span>31.08.2024</span>
+                    <span class="text">Erst das Entscheidungsmatch machts: Team Pumpkin Spicy Latte siegt knapp über Mad Dawg in Smash Bros!</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img th:src="@{/siegerbildMariokart.jpg}" alt='slider-image'>
+                <div>
+                    <span>31.08.2024</span>
+                    <span class="text">Rasant und Eindeutig: Team Pixelpioniere by GPT-4 gewinnt Mariokart 8 Deluxe mit voller Punkteausbeute!</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img th:src="@{/siegerbildSmash.jpg}" alt='slider-image'>
+                <div>
+                    <span>31.08.2024</span>
+                    <span class="text">Erst das Entscheidungsmatch machts: Team Pumpkin Spicy Latte siegt knapp über Mad Dawg in Smash Bros!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="older-slide-posts">
+        <div id="wrapper">
+            <div class="item_vertical" data-id="0">
+                <div class="wrapper">
+                    <img th:src="@{/siegerbildSmash.jpg}" alt='slider-image'>
+                    <div>
+                        <span>31.08.2024</span>
+                        <span class="text">Team Pumpkin Spicy Latte siegt in Smash Bros</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item_vertical" data-id="1">
+                <div class="wrapper">
+                    <img th:src="@{/siegerbildMariokart.jpg}" alt='slider-image'>
+                    <div>
+                        <span>31.08.2024</span>
+                        <span class="text">Team Pixelpioniere by GPT-4 gewinnt Mariokart 8 Deluxe</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item_vertical" data-id="2">
+                <div class="wrapper">
+                    <img th:src="@{/siegerbildSmash.jpg}" alt='slider-image'>
+                    <div>
+                        <span>31.08.2024</span>
+                        <span class="text">Team Pumpkin Spicy Latte siegt in Smash Bros</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item_vertical" data-id="3">
+                <div class="wrapper">
+                    <img th:src="@{/siegerbildMariokart.jpg}" alt='slider-image'>
+                    <div>
+                        <span>31.08.2024</span>
+                        <span class="text">Team Pixelpioniere by GPT-4 gewinnt Mariokart 8 Deluxe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrows-wrapper">
+        <a class="arrow-left" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+  				<path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+			</svg>
+        </a>
+        <a class="arrow-right" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+  				<path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+			</svg>
+        </a>
+    </div>
+    <span class="timeline">
+        <span></span>  
+    </span>
+</div>
+    
+    <!--ESPORT CHAMPIONSHIP SPONSORS BEGIN-->
+<div class="esport-championship-sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 sponsors">
+                <span>Team</span> 
+                <span>sponsors</span>
+            </div>
+            <div class="col-md-3 col-sm-4 text-center">
+                <img th:src="@{/carrygods.png}" alt="sponsor-image">
+            </div>
+            <div class="col-md-3 col-sm-4  text-center">
+                <img th:src="@{/infiluLogo.png}" alt="sponsor-image">
+            </div>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP SPONSORS END-->
+    
+    <div id="matches" class="esport_champoinship_shedule_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <!--ESPORT CHAMPIONSHIP STANDINGS BEGIN -->
+<div class="esport-championship-standings">
+    <div class="buttons-wrapper">
+        <a href ="#" class="arrow left">
+        	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+  				<path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+			</svg>
+		</a>
+        <a href ="#" class="arrow right">
+	        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+  				<path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+			</svg>
+		</a>
+        <span>
+            standing:
+            <span class="league">Gesamtwertung</span>            
+        </span>
+    </div>
+   <div class="mySlides fade-standings">
+        <span class="league_name">Gesamtwertung</span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img th:src ="@{/maddawg.png}" alt='team-logo'>
+            <span class="name">Mad Dawg</span>
+            <span class="number">24</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img th:src ="@{/reichsbuerger.png}" alt='team-logo'>
+            <span class="name">Reichsbürger</span>
+            <span class="number">16</span>
+        </a>
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img th:src ="@{/pixelpioniere.png}" alt='team-logo'>
+            <span class="name">Pixelpioniere by GPT-4</span>
+            <span class="number">16</span>
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                4
+            </span>
+            <img th:src ="@{/pumpkinspicy.png}" alt='team-logo'>
+            <span class="name">Pumpkin Spicy Latte</span>
+            <span class="number">15</span>
+        </a>
+    </div>
+     <div class="mySlides fade-standings">
+        <span class="league_name">Smash Bros</span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img th:src ="@{/pumpkinspicy.png}" alt='team-logo'>
+            <span class="name">Pumpkin Spicy Latte</span>
+            <span class="number">5</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img th:src ="@{/maddawg.png}" alt='team-logo'>
+            <span class="name">Mad Dawg</span>
+            <span class="number">5</span>
+        </a>
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img th:src ="@{/reichsbuerger.png}" alt='team-logo'>
+            <span class="name">Reichsbürger</span>
+            <span class="number">2</span>
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                3
+            </span>
+            <img th:src ="@{/pixelpioniere.png}" alt='team-logo'>
+            <span class="name">Pixelpioniere by GPT-4</span>
+            <span class="number">2</span>
+        </a>
+    </div>
+    <div class="mySlides fade-standings">
+        <span class="league_name">Darts</span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img th:src ="@{/pumpkinspicy.png}" alt='team-logo'>
+            <span class="name">Pumpkin Spicy Latte</span>
+            <span class="number">7</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img th:src ="@{/maddawg.png}" alt='team-logo'>
+            <span class="name">Mad Dawg</span>
+            <span class="number">4</span>
+        </a>
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img th:src ="@{/reichsbuerger.png}" alt='team-logo'>
+            <span class="name">Reichsbürger</span>
+            <span class="number">2</span>
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                3
+            </span>
+            <img th:src ="@{/pixelpioniere.png}" alt='team-logo'>
+            <span class="name">Pixelpioniere by GPT-4</span>
+            <span class="number">2</span>
+        </a>
+    </div>
+    <div class="mySlides fade-standings">
+        <span class="league_name">EA FC 24</span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img th:src ="@{/maddawg.png}" alt='team-logo'>
+            <span class="name">Mad Dawg</span>
+            <span class="number">9</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img th:src ="@{/reichsbuerger.png}" alt='team-logo'>
+            <span class="name">Reichsbürger</span>
+            <span class="number">6</span>
+        </a>
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img th:src ="@{/pumpkinspicy.png}" alt='team-logo'>
+            <span class="name">Pumpkin Spicy Latte</span>
+            <span class="number">3</span>
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                4
+            </span>
+            <img th:src ="@{/pixelpioniere.png}" alt='team-logo'>
+            <span class="name">Pixelpioniere by GPT-4</span>
+            <span class="number">0</span>
+        </a>
+    </div>
+    <div class="mySlides fade-standings">
+        <span class="league_name">Mariokart 8 Deluxe</span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img th:src ="@{/pixelpioniere.png}" alt='team-logo'>
+            <span class="name">Pixelpioniere by GPT-4</span>
+            <span class="number">9</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img th:src ="@{/maddawg.png}" alt='team-logo'>
+            <span class="name">Mad Dawg</span>
+            <span class="number">6</span>
+        </a>
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img th:src ="@{/reichsbuerger.png}" alt='team-logo'>
+            <span class="name">Reichsbürger</span>
+            <span class="number">3</span>
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                4
+            </span>
+            <img th:src ="@{/pumpkinspicy.png}" alt='team-logo'>
+            <span class="name">Pumpkin Spicy Latte</span>
+            <span class="number">0</span>
+        </a>
+    </div>
+    <div class="mySlides fade-standings">
+        <span class="league_name">Minecraft Bedwars</span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img th:src ="@{/reichsbuerger.png}" alt='team-logo'>
+            <span class="name">Reichsbürger</span>
+            <span class="number">3</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img th:src ="@{/pixelpioniere.png}" alt='team-logo'>
+            <span class="name">Pixelpioniere by GPT-4</span>
+            <span class="number">3</span>
+        </a>
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img th:src ="@{/maddawg.png}" alt='team-logo'>
+            <span class="name">Mad Dawg</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                4
+            </span>
+            <img th:src ="@{/pumpkinspicy.png}" alt='team-logo'>
+            <span class="name">Pumpkin Spicy Latte</span>
+            <span class="number">0</span>
+        </a>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP STANDINGS END -->
+                </div>
+                <div class="col-md-7">
+                    <h5 class="esport-landing-header">latest matches</h5>
+                    <!--ESPORT CHAMPIONSHIP LATEST MATCHES BEGIN-->
+<div class="esport-championship-latest-matches">
+    <a href="#">
+        <img th:src="@{/esport-champ-late-match.jpg}" alt="background">
+        <span>MINECRAFT BEDWARS</span>
+        <div>
+            <div class="team left">
+                <span>
+                    <img th:src="@{/pixelpioniere.png}" alt="team-logo">
+                </span>
+                <span class="team-name">Pixelpioniere</span>
+            </div>
+            <div class="score">
+                <span>0:2</span>
+            </div>
+            <div class="team right">
+                <span class="image">
+                    <img th:src="@{/reichsbuerger.png}" alt="team-logo">
+                </span>
+                <span class="team-name">Reichsbürger</span>
+            </div>
+        </div>
+        <span>full time</span>
+    </a>
+    <a href="#">
+        <img th:src="@{/esport-champ-late-match.jpg}" alt="background">
+        <span>MINECRAFT BEDWARS</span>
+        <div>
+            <div class="team left">
+                <span>
+                    <img th:src="@{/pumpkinspicy.png}" alt="team-logo">
+                </span>
+                <span class="team-name">Pumpkin Spicy Latte</span>
+            </div>
+            <div class="score">
+                <span>0:1</span>
+            </div>
+            <div class="team right">
+                <span class="image">
+                    <img th:src="@{/pixelpioniere.png}" alt="team-logo">
+                </span>
+                <span class="team-name">Pixelpioniere</span>
+            </div>
+        </div>
+        <span>1 of 2 matches played</span>
+    </a>
+</div>
+<!--ESPORT CHAMPIONSHIP LATEST MATCHES END-->
+                </div>
+            </div>
+        </div>
+        <!--ESPORT CHAMPIONSHIP PARTICIPANTS BEGIN-->
+<div class="esport_championship_participants">
+    <div class="container">
+        <div class="row no-guters">
+            <div class="col-md-12">
+                <h5 class="esport-landing-header">TEAMS</h5>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img th:src="@{/esport-participants-background.jpg}" class="background-team" alt="background">
+                    <img th:src="@{/pixelpioniere.png}" alt="team-logo">
+                    <span>Pixelpioniere by GPT-4</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img th:src="@{/esport-participants-background.jpg}" class="background-team" alt="background">
+                    <img th:src="@{/pumpkinspicy.png}" alt="team-logo">
+                    <span>Pumpkin Spicy Latte</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img th:src="@{/esport-participants-background.jpg}" class="background-team" alt="background">
+                    <img th:src="@{/reichsbuerger.png}" alt="team-logo">
+                    <span>Reichsbürger</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img th:src="@{/esport-participants-background.jpg}" class="background-team" alt="background">
+                    <img th:src="@{/maddawg.png}" alt="team-logo">
+                    <span>Mad Dawg</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP PARTICIPANTS END-->
+    </div>
+    
+    <!-- ESPORT CHAMPIONSHIP ABOUT TROPHEY BEGIN -->
+<div id="about" class="esport-championship-about-trophey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h5 class="esport-landing-header">About Trophy</h5>
+                <div class="trophey-wrap">
+                    <span>
+                        <img th:src="@{/pokal.png}" alt="trophey">
+                    </span>
+                    <span>
+                        <span class="name">Bre Turnier</span>
+                        <span class="date">2024</span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h5 class="esport-landing-header">About Event</h5>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="wrap">
+                            <span class="head">prize pool</span>
+                            <span class="info">1 Pokal/Spiel</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="wrap">
+                            <span class="head">Spiele im Turnier</span>
+                            <span class="info">8 Spiele</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="wrap">
+                            <span class="head">Date of event</span>
+                            <span class="info">2024</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="wrap">
+                            <span class="head">Number of players</span>
+                            <span class="info">8 Spieler</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ESPORT CHAMPIONSHIP ABOUT TROPHEY END -->
+    
+    <div class="esport_champoinship_ofthepast_section">
+    
+        <!--TIMLINE TABS BEGIN-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="esport-landing-header">Historie</h5>
+        </div>
+        <div class="col-md-12">
+            <ul class="esport-championship-timline-tabs">
+                <li class="active"><a href="team_2024.html">2024</a></li>
+                <li><a href="team_2025.html">2025</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--TIMLINE TABS END-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <!--ESPORT CHAMPIONSHIP WIN TEAM BEGIN-->
+<div class="esport-championship-win-team start team_2024">
+    <a href="#">
+        <div class="image-wrapper">
+            <img th:src="@{/maddawg.png}" alt="team-logo">
+        </div>
+        <div class="text">
+            <span class="name">Mad Dawg</span>
+            <span class="status">champion</span>
+        </div>
+    </a>
+</div>
+<!--ESPORT CHAMPIONSHIP WIN TEAM END-->
+                </div>
+                <div class="col-md-5">
+                    <!--ESPORT CHAMPIONSHIP PLACES BEGIN-->
+<div class="esport-championship-places start team_2024">
+    <a href="#">
+        <img class="background" th:src="@{/esport_championship_second_place_background.jpg}" alt="background">  
+        <img  class="team-logo" th:src="@{/reichsbuerger.png}" alt="team-logo">
+        <span>
+            <span class="name">Reichsbürger</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+    <a href="#">
+        <img class="background" th:src="@{/esport_championship_third_place_background.jpg}" alt="background"> 
+        <img class="team-logo" th:src="@{/pixelpioniere.png}" alt="team-logo">
+        <span>
+            <span class="name">Pixelpioniere by GPT-4</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+</div>
+<!--ESPORT CHAMPIONSHIP PLACES END-->
+                </div>
+            </div>
+        </div>
+
+        <!--ESPORT CHAMPIONSHIP PLAYERS BEGIN-->
+<div id="team" class="esport-championship-players">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="esport-landing-header">players</h5>
+                <ul class="esport-players">
+                    <li class="active">
+                        <a data-toggle="tab" href="#panters">Pixelpioniere by GPT-4</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#bears">Pumpkin Spicy Latte</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#horses">Reichsbürger</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#octopus">Mad Dawg</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="panters" class="tab-pane fade in active"> 
+                <div class="wrap"> 
+                    <div class="width players-wrapper">
+                        <a href="#" data-id="0">
+                            <img class="player-img" alt="player-img" th:src="@{/LOUIS.png}">
+                            <span class="name">
+                                Lew
+                            </span>
+                            <span class="info-bord">
+                                <span class="name">Lew</span>
+                                <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Minecraft</span>
+                                    <span class="score">69</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Smash Bros</span>
+                                    <span class="score">96</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rocket League</span>
+                                    <span class="score">75</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Mariokart 8 Deluxe</span>
+                                    <span class="score">90</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rainbow Six: Siege</span>
+                                    <span class="score">95</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">EA FC 24</span>
+                                    <span class="score">25</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Darts</span>
+                                    <span class="score">80</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Skull King</span>
+                                    <span class="score">20</span>
+                                </span>
+                            </span>
+                             <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Overall</span>
+                                    <span class="score">69</span>
+                                </span>
+                             </span>
+                            </span>
+                        </a>
+                        <a href="#" data-id="0">
+                            <img class="player-img" alt="player-img" th:src="@{/TIMO.png}">
+                            <span class="name">
+                                Timo
+                            </span>
+                            <span class="info-bord">
+                                <span class="name">Timo</span>
+                                <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Minecraft</span>
+                                    <span class="score">27</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Smash Bros</span>
+                                    <span class="score">32</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rocket League</span>
+                                    <span class="score">29</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Mariokart 8 Deluxe</span>
+                                    <span class="score">61</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rainbow Six: Siege</span>
+                                    <span class="score">11</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">EA FC 24</span>
+                                    <span class="score">6</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Darts</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Skull King</span>
+                                    <span class="score">24</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Overall</span>
+                                    <span class="score">27</span>
+                                </span>
+                             </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="bears" class="tab-pane fade"> 
+            <div class="wrap">
+                <div class="width players-wrapper">
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" th:src="@{/SCHLAX.png}">
+                        <span class="name">
+                            Schlax
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">Schlax</span>
+                             <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Minecraft</span>
+                                    <span class="score">95</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Smash Bros</span>
+                                    <span class="score">90</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rocket League</span>
+                                    <span class="score">10</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Mariokart 8 Deluxe</span>
+                                    <span class="score">70</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rainbow Six: Siege</span>
+                                    <span class="score">20</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">EA FC 24</span>
+                                    <span class="score">53</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Darts</span>
+                                    <span class="score">71</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Skull King</span>
+                                    <span class="score">89</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Overall</span>
+                                    <span class="score">62</span>
+                                </span>
+                             </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" th:src="@{/MARK.png}">
+                        <span class="name">
+                            Mark
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">Mark</span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Minecraft</span>
+                                    <span class="score">15</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Smash Bros</span>
+                                    <span class="score">0</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rocket League</span>
+                                    <span class="score">80</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Mariokart 8 Deluxe</span>
+                                    <span class="score">59</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rainbow Six: Siege</span>
+                                    <span class="score">1</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">EA FC 24</span>
+                                    <span class="score">15</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Darts</span>
+                                    <span class="score">90</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Skull King</span>
+                                    <span class="score">71</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Overall</span>
+                                    <span class="score">41</span>
+                                </span>
+                             </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="horses" class="tab-pane fade"> 
+            <div class="wrap">
+                <div class="width players-wrapper">
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" th:src="@{/EDDIE.png}">
+                        <span class="name">
+                            Eddie
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">Eddie</span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Minecraft</span>
+                                    <span class="score">72</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Smash Bros</span>
+                                    <span class="score">7</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rocket League</span>
+                                    <span class="score">90</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Mariokart 8 Deluxe</span>
+                                    <span class="score">89</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rainbow Six: Siege</span>
+                                    <span class="score">98</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">EA FC 24</span>
+                                    <span class="score">95</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Darts</span>
+                                    <span class="score">82</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Skull King</span>
+                                    <span class="score">70</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Overall</span>
+                                    <span class="score">75</span>
+                                </span>
+                             </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" th:src="@{/PETER.png}">
+                        <span class="name">
+                            Peter
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">Peter</span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Minecraft</span>
+                                    <span class="score">85</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Smash Bros</span>
+                                    <span class="score">21</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rocket League</span>
+                                    <span class="score">34</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Mariokart 8 Deluxe</span>
+                                    <span class="score">53</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rainbow Six: Siege</span>
+                                    <span class="score">61</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">EA FC 24</span>
+                                    <span class="score">42</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Darts</span>
+                                    <span class="score">69</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Skull King</span>
+                                    <span class="score">79</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Overall</span>
+                                    <span class="score">56</span>
+                                </span>
+                             </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="octopus" class="tab-pane fade"> 
+            <div class="wrap">
+                <div class="width players-wrapper">
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" th:src="@{/ALEX.png}">
+                        <span class="name">
+                            Alex
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">Alex</span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Minecraft</span>
+                                    <span class="score">92</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Smash Bros</span>
+                                    <span class="score">51</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rocket League</span>
+                                    <span class="score">97</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Mariokart 8 Deluxe</span>
+                                    <span class="score">89</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Rainbow Six: Siege</span>
+                                    <span class="score">74</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">EA FC 24</span>
+                                    <span class="score">90</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Darts</span>
+                                    <span class="score">64</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Skull King</span>
+                                    <span class="score">77</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="bar-label">
+                                    <span class="achievement">Overall</span>
+                                    <span class="score">79</span>
+                                </span>
+                             </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" th:src="@{/BRE.png}">
+                        <span class="name">
+                            Henry
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">Henry</span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" th:src="@{/BRE.png}">
+                        <span class="name">
+                            Uwe
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">Uwe</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP PLAYERS END-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5 class="esport-landing-header">Nintendo Switch</h5>
+                    <!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+<div class="esport-championship-comm-wrap">
+    <div class="item">
+        <div class="avatar"><img th:src="@{/snash.png}" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">Smash Bros</div>
+            <div class="country"><img th:src="@{/switchIcon.png}" alt="flag">Switch</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">
+        <div class="avatar"><img th:src="@{/mk8.jpeg}" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">Mariokart 8 Deluxe</div>
+            <div class="country"><img th:src="@{/switchIcon.png}" alt="flag">Switch</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="esport-landing-header">Computer-Spiele</h5>
+                    <!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+<div class="esport-championship-comm-wrap">
+    <div class="item">
+        <div class="avatar"><img th:src="@{/mc.png}" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">Minecraft Bedwars</div>
+            <div class="country"><img th:src="@{/pcicon.png}" alt="flag">PC</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">
+        <div class="avatar"><img th:src="@{/r6.png}" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">Rainbow Six: Siege</div>
+            <div class="country"><img th:src="@{/pcicon.png}" alt="flag">PC</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="esport-landing-header">Konsole / Controller</h5>
+                    <!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+<div class="esport-championship-comm-wrap">
+    <div class="item">
+        <div class="avatar"><img th:src="@{/rocket.png}" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">Rocket League</div>
+            <div class="country"><img th:src="@{/controllericon.png}" alt="flag">Gemischt</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">
+        <div class="avatar"><img th:src="@{/eafc.jpeg}" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">EA FC 24</div>
+            <div class="country"><img th:src="@{/controllericon.png}" alt="flag">Controller</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="esport-landing-header">Sonstiges</h5>
+                    <!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+<div class="esport-championship-comm-wrap">
+    <div class="item">
+        <div class="avatar"><img th:src="@{/darts.jpg}" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">Darts</div>
+            <div class="country"><img th:src="@{/handIcon.jpg}" alt="flag">Sonstiges</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">
+        <div class="avatar"><img th:src="@{/skullking.jpg}" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">Skull King</div>
+            <div class="country"><img th:src="@{/handIcon.jpg}" alt="flag">Sonstiges</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!--ESPORT CHAMPIONSHIP TWITTER SLIDER BEGIN-->
+<div id="twitter-slider" class="esport_championship_twitter_slider"  data-ride="carousel">
+    <!--<div class="wrapper-width">-->
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wrap">
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <div class="text">
+                                The obvious objective of #esport video games is to entertain people by surprising them with new experiences. Read more at w-team.torbara.com
+                            </div>
+                            <div class="copyright">@PiratesTeam / September 2017</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wrap">
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <div class="text">
+                                The obvious objective of <a href="#">#esport</a>video games is to entertain people by surprising them with. Read more <a href="#"> w-team.torbara.com</a>
+                            </div>
+                            <div class="copyright">@PiratesTeam / September 2016</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <!--</div>-->
+    <!-- Controls -->
+    <a class="nav-arrow left-arrow" href="#twitter-slider" role="button" data-slide="prev">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        <span class="sr-only"></span>
+    </a>
+    <a class="nav-arrow right-arrow" href="#twitter-slider" role="button" data-slide="next">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+        <span class="sr-only"></span>
+    </a>
+</div>
+<!--ESPORT CHAMPIONSHIP TWITTER SLIDER END-->
+    
+    <!--SPORT CHAMPIONSHIP LATEST VIDEOS BEGIN--> 
+<div class="esport-championship-latest-videos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="esport-landing-header">latest<span class='youtube'>CLIPS</span></h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="ifram-wrapper">
+                    <iframe src="https://www.youtube.com/embed/xkUTkfA0y3k" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4 video-wrapper">
+                <div class="wrapper">
+                    <div class="width">
+                        <div class="news-wrapper">
+                            <img th:src="@{/esport_championhip_videos_1.jpg}" alt="news-img">
+                            <iframe src="https://www.youtube.com/embed/R0QsO2uh-D4" allowfullscreen></iframe>
+                            <div class="news-border">
+                                <span class="date">5 september</span>
+                                <span class="name">Best Video Game Cinematic Trailers Of 2017</span>
+                            </div>
+                        </div>
+                        <div class="news-wrapper">
+                            <img th:src="@{/esport_championhip_videos_2.jpg}" alt="news-img">
+                            <iframe  src="https://www.youtube.com/embed/J6xZyd-86t8" allowfullscreen></iframe>
+                            <div class="news-border">
+                                <span class="date">4 september</span>
+                                <span class="name">Top 5: Most Epic Video Game Cinematic trailers </span>
+                            </div>
+                        </div>
+                        <div class="news-wrapper">
+                            <img th:src="@{/esport_championhip_videos_1.jpg}" alt="news-img">
+                            <iframe src="https://www.youtube.com/embed/mskPDjtZacs" allowfullscreen></iframe>
+                            <div class="news-border">
+                                <span class="date">1 september</span>
+                                <span class="name">Top 20 NEW Upcoming SURVIVAL GAMES of 2017 & 2018</span>
+                            </div>
+                        </div>
+                        <div class="news-wrapper">
+                            <img th:src="@{/esport_championhip_videos_2.jpg}" alt="news-img">
+                            <iframe src="https://www.youtube.com/embed/EmQxsBz27XY" allowfullscreen></iframe>
+                            <div class="news-border">
+                                <span class="date">28 august</span>
+                                <span class="name">TOP 25 BEST Upcoming Games of 2017 & 2018</span>
+                            </div>
+                        </div>                         
+                        <div class="news-wrapper">
+                            <img th:src="@{/esport_championhip_videos_1.jpg}" alt="news-img">
+                            <iframe  src="https://www.youtube.com/embed/k4MYqFw2KYg" allowfullscreen></iframe>
+                            <div class="news-border">
+                                <span class="date">25 august</span>
+                                <span class="name">Top 10 Video Game Cinematic Trailers 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+</div>
+<!--SPORT CHAMPIONSHIP LATEST VIDEOS END--> 
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="esport-landing-header">Subscribe to newsletter</h5>
+            </div>
+            <div class="col-md-12">
+                <div class="esport-championship-subscribe">   
+    <form>
+        <input type="text" name="text" placeholder="Type your e-mail here">
+        <button>subscribe</button>
+    </form>
+</div> 
+            </div>
+        </div>
+    </div>    
+    
+        
+    <!--SPORT CHAMPIONSHIP CONTACT BEGIN-->
+<div id="contact" class="esport-championship-contact">
+    <div class="wrapper-img">
+        <img th:src="@{/esport-champ-contact-background.jpg}" alt="esport-champ-contact-background">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="information-wrap-left">
+                    <div>
+                        <span class="header-first">Wir sehen uns zum </span>
+                        <span class="header-red">Großen Final</span>
+                    </div>
+                    <span>
+                        <span>Wird bald bekannt gegeben!</span>
+                        <span>2024</span>
+                    </span>
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="information-wrap">
+                    <div>
+                        <span class="header-welcom">Unterstütze dein</span>
+                        <span class="header-arena">Team</span>
+                    </div>
+                    <span>
+                        <span>Komm vorbei und unterstütze dein Lieblingsteam und deine Liebelingsspieler</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--SPORT CHAMPIONSHIP CONTACT END-->
+    
+    <div class="esport-championship-footer-links">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    <li class="facebook">
+                        <a href="#">
+                            <span>facebook</span>
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="twitter">
+                        <a href="#">
+                            <span>twitter</span>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="twitch">
+                        <a href="#">
+                            <span>twitch</span>
+                            <i class="fa fa-twitch" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="instagram">
+                        <a href="#">
+                            <span>instagram</span>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="youtube">
+                        <a href="#">
+                            <span>youtube</span>
+                            <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <script type="text/javascript" th:src="@{/jquery.js}"></script>
+<script type="text/javascript" th:src="@{/jquery-ui.js}"></script>
+<script type="text/javascript" th:src="@{/bootstrap.js}"></script>
+<script type="text/javascript" th:src="@{/jquery.sticky.js}"></script>
+<script type="text/javascript" th:src="@{/jquery.jcarousel.js}"></script>
+<script type="text/javascript" th:src="@{/jcarousel.connected-carousels.js}"></script>
+<script type="text/javascript" th:src="@{/owl.carousel.js}"></script>
+<script type="text/javascript" th:src="@{/progressbar.js}"></script>
+<script type="text/javascript" th:src="@{/jquery.bracket.min.js}"></script>
+<script type="text/javascript" th:src="@{/chartist.js}"></script>
+<script type="text/javascript" th:src="@{/Chart.js}"></script>
+<script type="text/javascript" th:src="@{/fancySelect.js}"></script>
+<script type="text/javascript" th:src="@{/isotope.pkgd.js}"></script>
+<script type="text/javascript" th:src="@{/imagesloaded.pkgd.js}"></script>
+
+<script type="text/javascript" th:src="@{/jquery.team-coundown.js}"></script>
+<script type="text/javascript" th:src="@{/matches-slider.js}"></script>
+<script type="text/javascript" th:src="@{/header.js}"></script>
+<script type="text/javascript" th:src="@{/matches_broadcast_listing.js}"></script>
+<script type="text/javascript" th:src="@{/news-line.js}"></script>
+<script type="text/javascript" th:src="@{/match_galery.js}"></script>
+<script type="text/javascript" th:src="@{/main-club-gallery.js}"></script>
+<script type="text/javascript" th:src="@{/product-slider.js}"></script>
+<script type="text/javascript" th:src="@{/circle-bar.js}"></script>
+<script type="text/javascript" th:src="@{/standings.js}"></script>
+<script type="text/javascript" th:src="@{/shop-price-filter.js}"></script>
+<script type="text/javascript" th:src="@{/timeseries.js}"></script>
+<script type="text/javascript" th:src="@{/radar.js}"></script>
+<script type="text/javascript" th:src="@{/slider.js}"></script>
+<script type="text/javascript" th:src="@{/preloader.js}"></script>
+<script type="text/javascript" th:src="@{/diagram.js}"></script>
+<script type="text/javascript" th:src="@{/bi-polar-diagram.js}"></script>
+<script type="text/javascript" th:src="@{/label-placement-diagram.js}"></script>
+<script type="text/javascript" th:src="@{/donut-chart.js}"></script>
+<script type="text/javascript" th:src="@{/animate-donut.js}"></script>
+<script type="text/javascript" th:src="@{/advanced-smil.js}"></script>
+<script type="text/javascript" th:src="@{/svg-path.js}"></script>
+<script type="text/javascript" th:src="@{/pick-circle.js}"></script>
+<script type="text/javascript" th:src="@{/horizontal-bar.js}"></script>
+<script type="text/javascript" th:src="@{/gauge-chart.js}"></script>
+<script type="text/javascript" th:src="@{/stacked-bar.js}"></script>
+
+<script type="text/javascript" th:src="@{/chartist-plugin-legend.js}"></script>
+<script type="text/javascript" th:src="@{/chartist-plugin-threshold.js}"></script>
+<script type="text/javascript" th:src="@{/chartist-plugin-pointlabels.js}"></script>
+
+<script type="text/javascript" th:src="@{/treshold.js}"></script>
+<script type="text/javascript" th:src="@{/visible.js}"></script>
+<script type="text/javascript" th:src="@{/anchor.js}"></script>
+<script type="text/javascript" th:src="@{/landing_carousel.js}"></script>
+<script type="text/javascript" th:src="@{/landing_sport_standings.js}"></script>
+<script type="text/javascript" th:src="@{/twitterslider.js}"></script>
+<script type="text/javascript" th:src="@{/champions.js}"></script>
+<script type="text/javascript" th:src="@{/landing_mainnews_slider.js}"></script>
+<script type="text/javascript" th:src="@{/carousel.js}"></script>
+<script type="text/javascript" th:src="@{/video_slider.js}"></script>
+<script type="text/javascript" th:src="@{/footer_slides.js}"></script>
+<script type="text/javascript" th:src="@{/player_test.js}"></script>
+
+<script type="text/javascript" th:src="@{/main.js}"></script>
+<script type="text/javascript" th:src="@{/bootstrap.js}"></script>
+</body>
+
+
+</html>
