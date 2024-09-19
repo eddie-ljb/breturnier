@@ -50,6 +50,16 @@ public class TournamentController {
     		return new ModelAndView("redirect:/api/auth/signin");
     	}
     }
+
+    @GetMapping("/news")
+    public ModelAndView showNewsPage(@CookieValue("authToken") String authToken, Model model) {
+    	if (jwtUtils.validateJwtToken(authToken)) {
+    		model.addAttribute("authToken", authToken);
+    		return new ModelAndView("news.html");
+    	} else {
+    		return new ModelAndView("redirect:/api/auth/signin");
+    	}
+    }
     
     @GetMapping("/error")
     public ModelAndView showErrorPage(@CookieValue("authToken") String authToken, Model model) {

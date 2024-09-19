@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Team HTML</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans:700,400%7CRaleway:400,800,900" rel="stylesheet" />
+    <link rel="icon" th:href="@{/favicon.ico}" type="image/x-icon">
+    <link th:href="@{/bootstrap.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/preloader-default.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/soccer.min.css}" rel="stylesheet" type="text/css" />
+    <!-- 
+    
+    Enable one styles which the you want
+    
+    <link href="css-min/soccer.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/hockey.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/basketball.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/football.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/baseball.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/dota.min.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/csgo.min.css" rel="stylesheet" type="text/css" />
+    
+    All libraries included in this css, concating rules in /grunt/cssmin.js
+    Use grunt default task for creating this files
+    
+    -->
+</head>
+
+<body>
+
+	<div class="preloader-wrapper" id="preloader">
+    <div class="motion-line dark-big"></div>
+    <div class="motion-line yellow-big"></div>
+    <div class="motion-line dark-small"></div>
+    <div class="motion-line yellow-normal"></div>
+    <div class="motion-line yellow-small1"></div>
+    <div class="motion-line yellow-small2"></div>
+</div>
+
+
+    <!--MAIN MENU WRAP BEGIN-->
+<div class="main-menu-wrap sticky-menu">
+    <div class="container">
+        <a href="index-2.html" class="custom-logo-link"><img th:src="@{/breKlein.png}" alt="logo" class="custom-logo"></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#team-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <nav class="navbar">
+            <div class="collapse navbar-collapse" id="team-menu">
+                <ul class="main-menu nav">
+                        <li class="active">
+                            <a th:href="@{/breturnier/}">home</a>
+                        </li>
+                        <li>
+                        	<a th:href="@{/breturnier/matches}">Matches</a>
+                       	 	<ul>
+                           	 	<li>
+                           	     	<a th:href="@{/#}">Standings<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                           	     	<ul>
+                           	         	<li><a th:href="@{/breturnier/standings}">Bre Turnier</a></li>
+                           	     	</ul>
+                           	 	</li>
+                           	 	<li>
+                           	     	<a th:href="@{/#}">Einzelturniere<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                           	     	<ul>
+                           	         	<li><a th:href="@{/breturnier/games/smash}">Smash</a></li>
+                           	         	<li><a th:href="@{/breturnier/games/darts}">Darts</a></li>
+                           	         	<li><a th:href="@{/breturnier/games/mariokart}">Mariokart 8 Deluxe</a></li>
+                           	         	<li><a th:href="@{/breturnier/games/eafc}">EA FC 24</a></li>
+                           	         	<li><a th:href="@{/breturnier/games/minecraft}">Minecraft Bedwars</a></li>
+                           	         	<li><a th:href="@{/breturnier/games/rocket}">Rocket League</a></li>
+                           	         	<li><a th:href="@{/breturnier/games/rainbow}">Rainbow Six: Siege</a></li>
+                           	         	<li><a th:href="@{/breturnier/games/skullking}">Skull King</a></li>
+                           	     	</ul>
+                           	 	</li>
+                           	 	<li><a th:href="@{/breturnier/match-live}">Match Live</a></li>
+                           	 	<li><a th:href="@{/breturnier/broadcasts}">Livestreams</a></li>
+                         	   	<li><a th:href="@{/breturnier/upcoming-match}">nächstes Match</a></li>
+                           		<li><a th:href="@{/breturnier/live-text-stream}">Text stream</a></li>
+                        	</ul>
+                    	</li>
+                        <li>
+                            <a th:href="@{/breturnier/#team}">team</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/breturnier/news}">news</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/breturnier/#about}">about</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/breturnier/#contact}">contact</a>
+                        </li>
+                    </ul>
+            </div>       
+        </nav>
+    </div>
+</div>
+<!--MAIN MENU WRAP END-->
+
+
+    <!--MAIN MENU WRAP END-->
+
+    <!--BREADCRUMBS BEGIN-->
+<section class="image-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="info">
+                    <div class="wrap">
+                        <ul class="breadcrumbs">
+                            <li><a href="index-2.html">Bre Turnier</a>/</li>
+                            <li>Informationen</li>
+                        </ul>
+                        <h1>News</h1>
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </div>
+</section>
+<!--BREADCRUMBS END-->
+
+    <!--CONTENT BEGIN-->
+
+    <div class="content">
+        <div class="container">
+            <div class="row row-offcanvas row-offcanvas-left">
+
+                <!--SIDEBAR BEGIN-->
+<section class="sidebar col-xs-6 col-md-3 sidebar-offcanvas" id="sidebar">
+    <div class="sidebar-menu-wrap">
+        <h6>Categories</h6>
+        <ul class="categories-list">
+            <li>
+                <a href="#"><span class="count">4</span>News</a>
+            </li>
+            <li>
+                <a href="#"><span class="count">2</span>Competitions & Reviews</a>
+                <ul>
+                    <li><a href="#"><span class="count">0</span>Gesamtwertung</a></li>
+                    <li><a href="#"><span class="count">1</span>Smash Bros</a></li>
+                    <li><a href="#"><span class="count">1</span>Mariokart 8 Deluxe</a></li>
+                    <li><a href="#"><span class="count">0</span>EA FC 24</a></li>
+                    <li><a href="#"><span class="count">0</span>Minecraft Bedwars</a></li>	
+                    <li><a href="#"><span class="count">0</span>Rocket League</a></li>	
+                    <li><a href="#"><span class="count">0</span>Rainbow Six: Siege</a></li>	
+                    <li><a href="#"><span class="count">0</span>Skull King</a></li>	
+                    <li><a href="#"><span class="count">0</span>Darts</a></li>	
+                </ul>
+            </li>
+            <li>
+                <a href="#"><span class="count">1</span>Interviews</a>
+            </li>
+            <li>
+                <a href="#"><span class="count">2</span>Highlights</a>
+            </li>
+            <li>
+                <a href="#"><span class="count">1</span>Other</a>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-search-wrap">
+        <h6>Search</h6>
+        <form>
+            <div class="wrap">
+                <input type="text">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </form>
+    </div>
+    <div class="sidebar-tags-wrap">
+        <h6>Tags</h6>
+        <div class="tags">
+            <a href="#">Team</a>
+            <a href="#">Sieger</a>
+            <a href="#">Spiele</a>
+            <a href="#">Wertung</a>
+            <a href="#">Spieler</a>
+        </div>
+    </div>
+</section>	
+<!--SIEDBAR END-->
+                <!--NEWS LIST BEGIN-->
+<div class="news-list col-xs-12 col-md-9">
+    <p class="hidden-md hidden-lg">
+        <button type="button" class="btn sidebar-btn" data-toggle="offcanvas" title="Toggle sidebar">sidebar</button>
+    </p>
+    <div class="item quote">
+        <div class="info">
+            <a v class="name">Erfolgreicher erster Tag: Matchday 1 des Bre Turniers wurde erfolgreich abgeschlossen. Gespielt wurden Darts, Smash Bros, Mariokart 8 Deluxe und EA FC 24, Minecraft Bedwars hingegen wurde angefangen. Der bisherige Verlauf verspricht dabei sehr viel Potenzial.</a>
+            <div class="wrap">
+                <a th:href="@{/breturnier/news-turnier-2024-pause}">01.09.2024</a> by <a th:href="@{/breturnier/news-turnier-2024-pause}">Etienne</a>
+            </div>
+            <div class="comment-quantity">0 comments</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="item img-top">
+        <div class="img-wrap">
+            <div class="bage"><a th:href="@{/breturnier/news-sieger-smash}">highlight</a></div>
+            <a th:href="@{/breturnier/news-sieger-smash}"><img th:src="@{/siegerbildMariokart.jpg}" alt="post image"></a>
+        </div>
+        <div class="info">
+            <a th:href="@{/breturnier/news-sieger-smash}" class="name">Rasant und Eindeutig: Team Pixelpioniere by GPT-4 gewinnt Mariokart 8 Deluxe mit voller Punkteausbeute!</a>	
+            <div class="wrap">
+                <a th:href="@{/breturnier/news-sieger-smash}">31.08.2024</a> by <a th:href="@{/breturnier/news-sieger-smash}">Etienne</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="item img-top">
+        <div class="img-wrap">
+            <div class="bage"><a th:href="@{/breturnier/news-sieger-mariokart}">highlight</a></div>
+            <a th:href="@{/breturnier/news-sieger-mariokart}"><img th:src="@{/siegerbildSmash.jpg}" alt="post image"></a>
+        </div>
+        <div class="info">
+            <a th:href="@{/news-sieger-mariokart}" class="name">Erst das Entscheidungsmatch machts: Team Pumpkin Spicy Latte siegt knapp über Mad Dawg in Smash Bros!</a>	
+            <div class="wrap">
+                <a th:href="@{/breturnier/news-sieger-mariokart}">31.08.2024</a> by <a th:href="@{/breturnier/news-sieger-mariokart}">Etienne</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="info">
+            <a th:href="@{/breturnier/news-beginn-2024}" class="name">Bre Turnier 2024 beginnt!</a>	
+            <div class="wrap">
+                <a th:href="@{/breturnier/news-beginn-2024}">30.08.2024</a> by <a th:href="@{/breturnier/news-beginn-2024}">Etienne</a>
+            </div>
+            <div class="comment-quantity">0 comments</div>
+            <div class="clear"></div>
+            <p>Am morgigen 31.08.2024 beginnt die erste Auflage des Bre Turniers. Dabei spielen verschiedenen Spieler in verschiedenen Spielen gegeneinander. Dabei werden verschiedene Teams ausgelost, welche dann aufeinandertreffen. ...</p>
+            <a th:href="@{/breturnier/news-beginn-2024}" class="continue">Continue Reading</a>
+        </div>
+    </div>
+    <div class="pagination-wrap">
+        <ul class="pagination">
+            <li><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+</div>
+<!--NEWS LIST END-->
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--CONTENT END-->
+
+    <!--FOOTER BEGIN-->
+<footer class="footer">
+    <div class="wrapper-overfllow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-left">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-offset-1">
+                </div>
+                <div class=" col-lg-3 col-md-4 col-sm-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-menu-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="footer-menu">
+                        <li class="active"><a href="index-2.html"><span>Home</span></a></li>
+                        <li><a th:href="@{/breturnier/matches}"><span>Matches</span></a></li>
+                        <li><a th:href="@{/breturnier/#team}"><span>Team</span></a></li>
+                        <li><a th:href="@{/breturnier/news}"><span>News</span></a></li>
+                        <li><a th:href="@{/breturnier/#about}"><span>About</span></a></li>
+                        <li><a th:href="@{/breturnier/#contact}"><span>Contact</span></a></li>
+                    </ul>	
+                    <a href="#top" class="foot-up"><span>up <i class="fa fa-caret-up" aria-hidden="true"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--FOOTER END-->
+
+    <script type="text/javascript" th:src="@{/jquery.js}"></script>
+<script type="text/javascript" th:src="@{/jquery-ui.js}"></script>
+<script type="text/javascript" th:src="@{/bootstrap.js}"></script>
+<script type="text/javascript" th:src="@{/jquery.sticky.js}"></script>
+<script type="text/javascript" th:src="@{/jquery.jcarousel.js}"></script>
+<script type="text/javascript" th:src="@{/jcarousel.connected-carousels.js}"></script>
+<script type="text/javascript" th:src="@{/owl.carousel.js}"></script>
+<script type="text/javascript" th:src="@{/progressbar.js}"></script>
+<script type="text/javascript" th:src="@{/jquery.bracket.min.js}"></script>
+<script type="text/javascript" th:src="@{/chartist.js}"></script>
+<script type="text/javascript" th:src="@{/Chart.js}"></script>
+<script type="text/javascript" th:src="@{/fancySelect.js}"></script>
+<script type="text/javascript" th:src="@{/isotope.pkgd.js}"></script>
+<script type="text/javascript" th:src="@{/imagesloaded.pkgd.js}"></script>
+
+<script type="text/javascript" th:src="@{/jquery.team-coundown.js}"></script>
+<script type="text/javascript" th:src="@{/matches-slider.js}"></script>
+<script type="text/javascript" th:src="@{/header.js}"></script>
+<script type="text/javascript" th:src="@{/matches_broadcast_listing.js}"></script>
+<script type="text/javascript" th:src="@{/news-line.js}"></script>
+<script type="text/javascript" th:src="@{/match_galery.js}"></script>
+<script type="text/javascript" th:src="@{/main-club-gallery.js}"></script>
+<script type="text/javascript" th:src="@{/product-slider.js}"></script>
+<script type="text/javascript" th:src="@{/circle-bar.js}"></script>
+<script type="text/javascript" th:src="@{/standings.js}"></script>
+<script type="text/javascript" th:src="@{/shop-price-filter.js}"></script>
+<script type="text/javascript" th:src="@{/timeseries.js}"></script>
+<script type="text/javascript" th:src="@{/radar.js}"></script>
+<script type="text/javascript" th:src="@{/slider.js}"></script>
+<script type="text/javascript" th:src="@{/preloader.js}"></script>
+<script type="text/javascript" th:src="@{/diagram.js}"></script>
+<script type="text/javascript" th:src="@{/bi-polar-diagram.js}"></script>
+<script type="text/javascript" th:src="@{/label-placement-diagram.js}"></script>
+<script type="text/javascript" th:src="@{/donut-chart.js}"></script>
+<script type="text/javascript" th:src="@{/animate-donut.js}"></script>
+<script type="text/javascript" th:src="@{/advanced-smil.js}"></script>
+<script type="text/javascript" th:src="@{/svg-path.js}"></script>
+<script type="text/javascript" th:src="@{/pick-circle.js}"></script>
+<script type="text/javascript" th:src="@{/horizontal-bar.js}"></script>
+<script type="text/javascript" th:src="@{/gauge-chart.js}"></script>
+<script type="text/javascript" th:src="@{/stacked-bar.js}"></script>
+
+<script type="text/javascript" th:src="@{/chartist-plugin-legend.js}"></script>
+<script type="text/javascript" th:src="@{/chartist-plugin-threshold.js}"></script>
+<script type="text/javascript" th:src="@{/chartist-plugin-pointlabels.js}"></script>
+
+<script type="text/javascript" th:src="@{/treshold.js}"></script>
+<script type="text/javascript" th:src="@{/visible.js}"></script>
+<script type="text/javascript" th:src="@{/anchor.js}"></script>
+<script type="text/javascript" th:src="@{/landing_carousel.js}"></script>
+<script type="text/javascript" th:src="@{/landing_sport_standings.js}"></script>
+<script type="text/javascript" th:src="@{/twitterslider.js}"></script>
+<script type="text/javascript" th:src="@{/champions.js}"></script>
+<script type="text/javascript" th:src="@{/landing_mainnews_slider.js}"></script>
+<script type="text/javascript" th:src="@{/carousel.js}"></script>
+<script type="text/javascript" th:src="@{/video_slider.js}"></script>
+<script type="text/javascript" th:src="@{/footer_slides.js}"></script>
+<script type="text/javascript" th:src="@{/player_test.js}"></script>
+
+<script type="text/javascript" th:src="@{/main.js}"></script>
+
+</body>
+
+
+</html>
